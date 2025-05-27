@@ -1,9 +1,8 @@
-using Microsoft.Extensions.DependencyInjection;
 using EntityCachingLib.Interfaces;
-using EntityCachingLib.Services;
-using StackExchange.Redis;
 using EntityCachingLib.Models;
+using EntityCachingLib.Services;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EntityCachingLib.Extensions
 {
@@ -12,7 +11,6 @@ namespace EntityCachingLib.Extensions
         public static IServiceCollection AddEntityCaching(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddOptions<CacheConfig>(configuration.GetSection("CacheConfig").Value);
-            services.AddMemoryCache();
             services.AddSingleton<ICacheService, MemoryCacheService>();
             services.AddSingleton<ICacheService, RedisCacheService>();
             services.AddSingleton<ICacheServiceFactory, CacheServiceFactory>();

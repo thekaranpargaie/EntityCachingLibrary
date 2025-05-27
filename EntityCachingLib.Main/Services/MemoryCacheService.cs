@@ -1,8 +1,6 @@
 using EntityCachingLib.Interfaces;
 using EntityCachingLib.Models;
 using Microsoft.Extensions.Caching.Memory;
-using System;
-using System.Threading.Tasks;
 
 namespace EntityCachingLib.Services
 {

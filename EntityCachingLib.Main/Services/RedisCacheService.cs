@@ -3,8 +3,6 @@ using EntityCachingLib.Models;
 using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 using System.Text.Json;
-using System.Threading.Tasks;
-using System;
 
 namespace EntityCachingLib.Services
 {
