@@ -1,0 +1,230 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MyProjects\\EntityCachingLib\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\models\\cacheprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:models\\cacheprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\services\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:services\\rediscacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\interfaces\\icacheservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:interfaces\\icacheservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\services\\cacheservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:services\\cacheservicefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\interfaces\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:interfaces\\icacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\services\\entitycachemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:services\\entitycachemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\services\\memorycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:services\\memorycacheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\models\\cacheconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:models\\cacheconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|d:\\myprojects\\entitycachinglib\\interfaces\\ientitycachemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC12F2D5-8F05-8F72-A421-C14670958E31}|EntityCachingLib.csproj|solutionrelative:interfaces\\ientitycachemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CacheServiceFactory.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Services\\CacheServiceFactory.cs",
+              "RelativeDocumentMoniker": "Services\\CacheServiceFactory.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Services\\CacheServiceFactory.cs",
+              "RelativeToolTip": "Services\\CacheServiceFactory.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAwAsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T10:04:38.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T11:50:58.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICacheServiceFactory.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\ICacheServiceFactory.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICacheServiceFactory.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\ICacheServiceFactory.cs",
+              "RelativeToolTip": "Interfaces\\ICacheServiceFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:38:53.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RedisCacheService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Services\\RedisCacheService.cs",
+              "RelativeDocumentMoniker": "Services\\RedisCacheService.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Services\\RedisCacheService.cs",
+              "RelativeToolTip": "Services\\RedisCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:36:41.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CacheProvider.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Models\\CacheProvider.cs",
+              "RelativeDocumentMoniker": "Models\\CacheProvider.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Models\\CacheProvider.cs",
+              "RelativeToolTip": "Models\\CacheProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:53:40.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICacheService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\ICacheService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\ICacheService.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\ICacheService.cs",
+              "RelativeToolTip": "Interfaces\\ICacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:21:54.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EntityCacheManager.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Services\\EntityCacheManager.cs",
+              "RelativeDocumentMoniker": "Services\\EntityCacheManager.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Services\\EntityCacheManager.cs",
+              "RelativeToolTip": "Services\\EntityCacheManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:12:42.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MemoryCacheService.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Services\\MemoryCacheService.cs",
+              "RelativeDocumentMoniker": "Services\\MemoryCacheService.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Services\\MemoryCacheService.cs",
+              "RelativeToolTip": "Services\\MemoryCacheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T11:50:55.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CacheConfig.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Models\\CacheConfig.cs",
+              "RelativeDocumentMoniker": "Models\\CacheConfig.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Models\\CacheConfig.cs",
+              "RelativeToolTip": "Models\\CacheConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:25:06.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IEntityCacheManager.cs",
+              "DocumentMoniker": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\IEntityCacheManager.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEntityCacheManager.cs",
+              "ToolTip": "D:\\MyProjects\\EntityCachingLib\\Interfaces\\IEntityCacheManager.cs",
+              "RelativeToolTip": "Interfaces\\IEntityCacheManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:23:27.149Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
