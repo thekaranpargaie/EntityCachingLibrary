@@ -2,9 +2,9 @@ using EntityCachingLib.Interfaces;
 using EntityCachingLib.Models;
 using Microsoft.Extensions.Caching.Memory;
 
-namespace EntityCachingLib.Services
+namespace EntityCachingLib.Main.Providers
 {
-    public class MemoryCacheService : ICacheService
+    public class MemoryCacheService : ICacheProvider
     {
         public CacheProvider Provider => CacheProvider.Memory;
         private readonly IMemoryCache _cache;

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace EntityCachingLib.Interfaces
 {
-    public interface ICacheService
+    public interface ICacheProvider
     {
         public CacheProvider Provider { get; }
         Task<T?> GetAsync<T>(string key);

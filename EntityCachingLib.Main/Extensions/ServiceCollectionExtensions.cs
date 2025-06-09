@@ -1,4 +1,5 @@
 using EntityCachingLib.Interfaces;
+using EntityCachingLib.Main.Providers;
 using EntityCachingLib.Models;
 using EntityCachingLib.Services;
 using Microsoft.Extensions.Configuration;
@@ -11,8 +12,8 @@ namespace EntityCachingLib.Extensions
         public static IServiceCollection AddEntityCaching(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddOptions<CacheConfig>(configuration.GetSection("CacheConfig").Value);
-            services.AddSingleton<ICacheService, MemoryCacheService>();
-            services.AddSingleton<ICacheService, RedisCacheService>();
+            services.AddSingleton<ICacheProvider, MemoryCacheService>();
+            services.AddSingleton<ICacheProvider, RedisCacheService>();
             services.AddSingleton<ICacheServiceFactory, CacheServiceFactory>();
             return services;
         }

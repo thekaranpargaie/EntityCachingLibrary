@@ -10,10 +10,10 @@ namespace EntityCachingLib.Test
         public async Task GetAsync_ReturnsFromPrimaryCache_IfExists()
         {
             var mockFactory = new Mock<ICacheServiceFactory>();
-            var mockPrimary = new Mock<ICacheService>();
+            var mockPrimary = new Mock<ICacheProvider>();
             mockPrimary.Setup(x => x.GetAsync<string>("Test:1")).ReturnsAsync("cached");
             mockFactory.Setup(x => x.GetPrimary()).Returns(mockPrimary.Object);
-            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheService>());
+            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheProvider>());
 
             var manager = new EntityCacheManager<string, int>(mockFactory.Object, "Test");
             var result = await manager.GetAsync(1, _ => Task.FromResult<string?>(null));
@@ -25,12 +25,12 @@ namespace EntityCachingLib.Test
         public async Task GetAsync_FetchesFromOtherCache_IfNotInPrimary()
         {
             var mockFactory = new Mock<ICacheServiceFactory>();
-            var mockPrimary = new Mock<ICacheService>();
-            var mockSecondary = new Mock<ICacheService>();
+            var mockPrimary = new Mock<ICacheProvider>();
+            var mockSecondary = new Mock<ICacheProvider>();
             mockPrimary.Setup(x => x.GetAsync<string>("Test:2")).ReturnsAsync((string?)null);
             mockSecondary.Setup(x => x.GetAsync<string>("Test:2")).ReturnsAsync("secondary");
             mockFactory.Setup(x => x.GetPrimary()).Returns(mockPrimary.Object);
-            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheService> { mockSecondary.Object });
+            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheProvider> { mockSecondary.Object });
 
             var manager = new EntityCacheManager<string, int>(mockFactory.Object, "Test");
             var result = await manager.GetAsync(2, _ => Task.FromResult<string?>(null));
@@ -43,11 +43,11 @@ namespace EntityCachingLib.Test
         public async Task GetAsync_FetchesFromDb_IfNotInAnyCache()
         {
             var mockFactory = new Mock<ICacheServiceFactory>();
-            var mockPrimary = new Mock<ICacheService>();
+            var mockPrimary = new Mock<ICacheProvider>();
             mockPrimary.Setup(x => x.GetAsync<string>("Test:3")).ReturnsAsync((string?)null);
             mockFactory.Setup(x => x.GetPrimary()).Returns(mockPrimary.Object);
-            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheService>());
-            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheService> { mockPrimary.Object });
+            mockFactory.Setup(x => x.GetAllExceptPrimary()).Returns(new List<ICacheProvider>());
+            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheProvider> { mockPrimary.Object });
 
             var manager = new EntityCacheManager<string, int>(mockFactory.Object, "Test");
             var result = await manager.GetAsync(3, _ => Task.FromResult<string?>("fromdb"));
@@ -60,9 +60,9 @@ namespace EntityCachingLib.Test
         public async Task SetAsync_SetsAllEnabledCaches()
         {
             var mockFactory = new Mock<ICacheServiceFactory>();
-            var mockCache1 = new Mock<ICacheService>();
-            var mockCache2 = new Mock<ICacheService>();
-            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheService> { mockCache1.Object, mockCache2.Object });
+            var mockCache1 = new Mock<ICacheProvider>();
+            var mockCache2 = new Mock<ICacheProvider>();
+            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheProvider> { mockCache1.Object, mockCache2.Object });
 
             var manager = new EntityCacheManager<string, int>(mockFactory.Object, "Test");
             await manager.SetAsync(4, "val");
@@ -75,9 +75,9 @@ namespace EntityCachingLib.Test
         public async Task RemoveAsync_RemovesFromAllEnabledCaches()
         {
             var mockFactory = new Mock<ICacheServiceFactory>();
-            var mockCache1 = new Mock<ICacheService>();
-            var mockCache2 = new Mock<ICacheService>();
-            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheService> { mockCache1.Object, mockCache2.Object });
+            var mockCache1 = new Mock<ICacheProvider>();
+            var mockCache2 = new Mock<ICacheProvider>();
+            mockFactory.Setup(x => x.GetAllEnabled()).Returns(new List<ICacheProvider> { mockCache1.Object, mockCache2.Object });
 
             var manager = new EntityCacheManager<string, int>(mockFactory.Object, "Test");
             await manager.RemoveAsync<string>(5);

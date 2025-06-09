@@ -1,4 +1,5 @@
 using EntityCachingLib.Interfaces;
+using EntityCachingLib.Main.Providers;
 using EntityCachingLib.Models;
 using EntityCachingLib.Services;
 using Microsoft.Extensions.Caching.Memory;
@@ -21,7 +22,7 @@ namespace EntityCachingLib.Test
             var mem = new MemoryCache(new MemoryCacheOptions());
             var memory = new Mock<MemoryCacheService>(mem).Object;
             var redis = new Mock<RedisCacheService>(Options.Create(config)).Object;
-            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheService> { memory, redis });
+            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheProvider> { memory, redis });
 
             var primary = factory.GetPrimary();
             Assert.AreEqual(memory, primary);
@@ -38,7 +39,7 @@ namespace EntityCachingLib.Test
             var mem = new MemoryCache(new MemoryCacheOptions());
             var memory = new Mock<MemoryCacheService>(mem).Object;
             var redis = new Mock<RedisCacheService>(Options.Create(config)).Object;
-            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheService> { memory, redis });
+            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheProvider> { memory, redis });
 
             var enabled = factory.GetAllEnabled();
             CollectionAssert.Contains(enabled, memory);
@@ -57,7 +58,7 @@ namespace EntityCachingLib.Test
             var mem = new MemoryCache(new MemoryCacheOptions());
             var memory = new Mock<MemoryCacheService>(mem).Object;
             var redis = new Mock<RedisCacheService>(Options.Create(config)).Object;
-            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheService> { memory, redis });
+            var factory = new CacheServiceFactory(Options.Create(config), new List<ICacheProvider> { memory, redis });
 
             var exceptPrimary = factory.GetAllExceptPrimary();
             CollectionAssert.Contains(exceptPrimary, redis);

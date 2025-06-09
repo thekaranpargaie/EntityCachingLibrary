@@ -4,9 +4,9 @@ using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 using System.Text.Json;
 
-namespace EntityCachingLib.Services
+namespace EntityCachingLib.Main.Providers
 {
-    public class RedisCacheService : ICacheService
+    public class RedisCacheService : ICacheProvider
     {
         public CacheProvider Provider => CacheProvider.Redis;
         private readonly IDatabase _db;
